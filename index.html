@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta chaset="utf-8"/>
+    <title>之阅</title>
+	<link href="static/css/QBase.css" rel="stylesheet" type="text/css"/>
+    <link href="static/css/article.css" rel="stylesheet"/>
+	<script>
+		if( (navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) ){
+			 if( document.cookie.indexOf("iphone_redirect=false") == -1 ){
+				  window.location = "http://www.4399ued.com/article/m.html";
+			 }
+		}
+	</script>
+</head>
+<body>
+<div class="toolbar" id="toolbar">
+	<h1 class="logo">之阅</h1>
+</div>
+
+<!--article_wrap-->
+<div class="article_wrap">
+	<div class="loading" id="loading"></div>
+	<div class="article_main" id="js-content">
+                <p>为了更好的体验，请使用chrome浏览器～～～</p>
+                <p class="copyright">如有好的文章推荐，请联系<a href="mailto:uezheng@gmail.com">@情封</a>～～</p>
+		<h2>更新日志</h2>
+		<dl class="history">
+                         <dt>2012.08.14</dt>
+			<dd>新增全屏查看文章</dd>
+			<dt>2012.08.13</dt>
+			<dd>文章采用ajax读取</dd>
+			
+		</dl>	
+	</div>
+	<div class="article_side" id="js-side"></div>
+	<div class="article_toolbar">
+		<span class="fullscreen" title="全屏" id="js-fullscreen"></span>
+	</div>
+</div>
+<!--article_wrap-->
+<div class="bottomBar" id="bottomBar">文章均来自互联网，版权归作者所有，如果侵犯了您的版权，请联系<a href="mailto:uezheng@gmail.com">@情封</a><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F201c55845b15e2fe0ee2fa617646e57c' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<script src = "static/js/ajax.js"></script>
+<script src = "static/js/articleData.js"></script>
+<script src = "static/js/article.js"></script>
+<script>
+Article.sidebar.init(articleDataArray);
+Article.fullScreen.init();
+</script>
+</body>
+</html>

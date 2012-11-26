@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta chaset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link href="static/images/cover.png" rel="apple-touch-startup-image">
+	<link href="static/images/logo.png" rel="apple-touch-icon-precomposed">
+    <title>之阅</title>
+    <link href="static/css/app.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="m_header">
+	<img src="static/images/m_logo.png"/>
+	<span class="m_close" id="js-close"></span>
+</div>
+<div class="wrapper" id="wrapper">
+	<div class="m_box" id="scroller">
+		<ul class="m_blist" id="js-blist"></ul>
+	</div>
+</div>
+<footer>&copy;2012 之阅 <address>&copy;情封</address></footer>
+<div class="m_article" id="js-article">
+	<div class="m_arcontent" id="js-article-content"></div>
+	
+</div>
+<script src = "static/js/ajax.js"></script>
+<script src = "static/js/articleData.js"></script>
+<script src = "static/js/app.js"></script>
+<script src = "static/js/iscroll.js"></script>
+
+<script>
+	APP.init(articleDataArray);
+	var myScroll;
+	function loaded() {
+		myScroll = new iScroll('wrapper');
+	}
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+
+
+</script>
+</body>
+</html>
