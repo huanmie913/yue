@@ -4,6 +4,21 @@
  * time   : 2012-08-13 
 */
 var articleDataArray = [
+		{
+		"id":1127,
+		"content" : {
+		  "from" : "",
+		  "url" : "http://www.socialbeta.cn/articles/seven-tips-to-improve-efficiency.html#jtss-tsina",
+		  "time" : "2012-11-27",
+		  "author" : "邹鑫-GTDLife",
+		  "avatar" : "http://tp4.sinaimg.cn/1299075611/50/5604297293/1",
+		  "title" : "提高效率的七个小贴士",
+		  "ajaxcontent" : {
+				"ajaxFlag" : true,
+				"ajaxSource" : "content/201211/1127.html"
+		  }
+		}
+	},
 	{
 		"id":1001,
 		"content" : {
